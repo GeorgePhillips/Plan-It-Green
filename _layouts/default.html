@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Plan It Questions</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/grapher.css">
+
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+<body>
+	<header>
+		<h1><img src="/images/logo.png" alt="Plan It Green"></h1>
+	</header>
+
+
+	<div class="container">
+		{{content}}
+	</div>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script> window.QUESTIONS = {{ site.data.questions | jsonify }} </script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/Chart.js"></script>
+    <script src="/js/results.js"></script>
+</body>
+</html>

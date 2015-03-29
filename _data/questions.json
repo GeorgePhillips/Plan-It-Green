@@ -1,0 +1,284 @@
+{
+	"Waste": [
+		{
+			"name": "How do you deal with your office rubbish?",
+			"question": "How do you deal with your office rubbish?",
+			"answers": [
+				"Unsorted trash",
+				"Effort to reduce trash",
+				"Some recycling",
+				"Effort to reduce trash and increase recycling",
+				"Segregrated recycling from trash"
+			],
+			"weight": 36
+		},
+		{
+			"name": "Do your staff have the option to compost organic waste?",
+			"question": "Do your staff have the option to compost organic waste?",
+			"answers": [
+				"Organic waste in trash",
+				"Reduce organic waste, but still no composting",
+				"Compost is used occasionally",
+				"Compost bins provided",
+				"Compost bins provided and encouraged"
+			],
+			"weight": 24
+		},
+		{
+			"name": "Is the office plumbing efficient?",
+			"question": "Is the office plumbing efficient?",
+			"answers": [
+				"Single flush toliets and tolelrated water leaks",
+				"Single flush toilets",
+				"Some single flush toilets and either dual flush toilets or low flow shower heads",
+				"Either dual flush tolielts or low flow shower heads",
+				"Dual flush toilets and low flow shower heads"
+			],
+			"weight": 20
+		},
+		{
+			"name": "How do you deal with electronic waste?",
+			"question": "How do you deal with electronic waste?",
+			"answers": [
+				"E-waste and batteries dumped with refuse",
+				"Either E-waste or batteries dumped with refuse",
+				"Efforts to reduce E-waste where practical",
+				"E-waste taken to a recycler or batteries recycled",
+				"E-waste taken to a recycler and batteries recycled also"
+			],
+			"weight": 20
+		}
+	],
+	"Energy": [
+		{
+			"name": "How does your power provider generate thier energy?",
+			"question": "How does your power provider generate thier energy?",
+			"answers": [
+				"Energy provider utilizes non-renewable energy",
+				"Energy provider utilizes minimal renewable energy",
+				"Energy provider utilizes some renewable energy",
+				"Energy provider utilizes mostly renewable energy",
+				"Energy provider utilizes all renewable energy"
+			],
+			"weight": 35
+		},
+		{
+			"name": "Could you tell us about your office lightbulbs?",
+			"question": "Could you tell us about your office lightbulbs?",
+			"answers": [
+				"Mostly incandescent bulbs",
+				"Mix of incandescent bulbs and compact fluorescent bulbs",
+				"Mostly compact fluorescent bulbs",
+				"Mix of compact fluorescent bulbs and LED or eco-bulbs",
+				"All LED or eco-bulbs"
+			],
+			"weight": 11
+		},
+		{
+			"name": "Are you considering energy consumption when buying IT gear?",
+			"question": "Are you considering energy consumption when buying IT gear?",
+			"answers": [
+				"No consideration given",
+				"Minimal consideration given",
+				"Good ratings are a bonus",
+				"Good ratings are required",
+				"Exellent energy ratings are required"
+			],
+			"weight": 6
+		},
+		{
+			"name": "What systems are in place to conserve power?",
+			"question": "What systems are in place to conserve power?",
+			"answers": [
+				"No policy. Equipment is left running",
+				"Some policies in place regarding turning off heating and equipment",
+				"Strict policies in place regarding turning off heating and equipment",
+				"Either light sensors or automatic equpment shut-off systems in place",
+				"Both light sensors and automatic equpment shut-off systems in place"
+			],
+			"weight": 6
+		},
+		{
+			"name": "How is hot water generated for your office?",
+			"question": "How is hot water generated for your office?",
+			"answers": [
+				"Uninsulated hot water cylinder",
+				"Insulated hot water cylinder",
+				"Mix of gas and electric methods",
+				"Efficient gas water heating",
+				"On-demand hot water heating"
+			],
+			"weight": 12
+		},
+		{
+			"name": "How is your office space insulated?",
+			"question": "How is your office space insulated?",
+			"answers": [
+				"No insulation or double glasing",
+				"Poor insulation",
+				"Acceptable insulation or some double glasing",
+				"Great insulation or all double glasing",
+				"AmazingGreat insulation and all double glasing"
+			],
+			"weight": 6
+		},
+		{
+			"name": "How's you office heated?",
+			"question": "How's you office heated?",
+			"answers": [
+				"Fan heaters",
+				"Inefficient gas, timber or electric options",
+				"Efficient gas, pellet or electric options",
+				"Unmanaged heat pumps",
+				"Thermostat managed heating system"
+			],
+			"weight": 12
+		},
+		{
+			"name": "Are you considering energy/water consumption when buying appliances?",
+			"question": "Are you considering energy/water consumption when buying appliances?",
+			"answers": [
+				"No consideration given",
+				"Minimal consideration given",
+				"Good ratings are a bonus",
+				"Good ratings are required",
+				"Exellent energy/water ratings are required"
+			],
+			"weight": 6
+		},
+		{
+			"name": "Where do you host your company data?",
+			"question": "Where do you host your company data?",
+			"answers": [
+				"In-house with power saving not a priority nor considered",
+				"In-house with power saving not a priority but considered",
+				"In a data center with an unspecified environmental policy",
+				"In-house with power saving a priority",
+				"In a data center with an clear environmental policy"
+			],
+			"weight": 6
+		}
+	],
+	"Operations": [
+		{
+			"name": "On average, how fuel efficient are comapny vechicles?",
+			"question": "On average, how fuel efficient are comapny vechicles?",
+			"answers": [
+				"We have an old vehicle fleet that are not overly efficient",
+				"We use a mix of modern cars and an older fleet",
+				"We use modern cars that have OK efficiency",
+				"A fuel efficent fleet is a clear company goal",
+				"Efficient vehicles is a top priority for us"
+			],
+			"weight": 17
+		},
+		{
+			"name": "Are you using engergy saving tires?",
+			"question": "Are you using engergy saving tires?",
+			"answers": [
+				"None of the fleet use fuel efficient tires",
+				"Very little of the fleet use fuel efficient tires",
+				"Some of the fleet uses fuel efficient tires",
+				"Most of the fleet uses fuel efficient tires",
+				"Yes, across the board"
+			],
+			"weight": 4
+		},
+		{
+			"name": "What are the office printing habits?",
+			"question": "What are the office printing habits?",
+			"answers": [
+				"Mostly single sided, no recycling policy",
+				"Mostly duplex or a clear recycling policy",
+				"Conservative printing is encoruraged and all paper waste is recycled",
+				"There is a paperless initives in place",
+				"We are a paperless office"
+			],
+			"weight": 12
+		},
+		{
+			"name": "What's the stance on fair-trade products for staff use?",
+			"question": "What's the stance on fair-trade products for staff use?",
+			"answers": [
+				"We don't use fair trade products",
+				"Fair trade products are sometimes used",
+				"Fair trade products are used some of the time",
+				"Fair trade products are used most of the time",
+				"Fair trade products are used exclusively"
+			],
+			"weight": 5
+		},
+		{
+			"name": "Are businesses in your supply line environmentally conscious?",
+			"question": "Are businesses in your supply line environmentally conscious?",
+			"answers": [
+				"None of the companies in our supply line are green focused companies",
+				"Some our supply line are green focused companies",
+				"A few companies in our supply line are green focused companies",
+				"Some our supply line are green focused companies",
+				"All of our supply line are green focused companies"
+			],
+			"weight": 13
+		},
+		{
+			"name": "Are there travel initiatives in place for your staff to reduce environmental impact?",
+			"question": "Are there travel initiatives in place for your staff to reduce environmental impact?",
+			"answers": [
+				"Staff are not interested in public transport options",
+				"No initiatives are in place to subsidise pubic transport or similar options to your staff.",
+				"Some initiatives are in place to subsidise pubic transport or similar options to your staff.",
+				"Good Initiatives are in place to subsidise pubic transport or similar options to your staff.",
+				"Initiatives are in place and encouraged to subsidies pubic transport or similar options to your staff."
+			],
+			"weight": 8
+		},
+		{
+			"name": "Is your business carbon neutral?",
+			"question": "Is your business carbon neutral?",
+			"answers": [
+				"We don't know",
+				"We're not trying to get carbon neutral",
+				"We're trying to get cabon neutral",
+				"Yes, we're fully cabon neutral",
+				"Yes, in fact we offset more than our impact"
+			],
+			"weight": 18
+		},
+		{
+			"name": "Is there a company policy on offsetting the impact of air travel or vehicle milage?",
+			"question": "Is there a company policy on offsetting the impact of air travel or vehicle milage?",
+			"answers": [
+				"We don't know",
+				"We don't offset such travel",
+				"We partially offset such travel",
+				"Yes, we offset all such travel 100%",
+				"Yes, we offset with more than we need to"
+			],
+			"weight": 13
+		},
+		{
+			"name": "Are your office cleaners environmentally conscious and using eco-friendly cleaning products?",
+			"question": "Are your office cleaners environmentally conscious and using eco-friendly cleaning products?",
+			"answers": [
+				"No they are not committed to being green or use eco-friendly cleaning products",
+				"No they are not committed to being green but use eco-friendly cleaning products",
+				"Yes they are committed to being green or using eco-friendly cleaning products",
+				"Yes they are committed to being greens and using eco-friendly cleaning products",
+				"Yes and they are publically marketed as such"
+			],
+			"weight": 5
+		},
+		{
+			"name": "Are invoices paid and delivered electronically?",
+			"question": "Are invoices paid and delivered electronically?",
+			"answers": [
+				"Never electonic when paying and sending invoices",
+				"Sometimes electonic when paying and sending invoices",
+				"Mostly electonic when paying or sending invoices",
+				"Mostly electonic when paying and sending invoices",
+				"Always electonic when paying and sending invoices"
+			],
+			"weight": 5
+		}
+	]
+}
