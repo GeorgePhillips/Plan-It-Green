@@ -22,16 +22,16 @@
 
 			var data = [
 				{
-					value: 100 - percentage,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Red"
-				},
-				{
 					value: percentage,
-					color: "#46BFBD",
+					color: "#38B449",
 					highlight: "#5AD3D1",
 					label: "Green"
+				},
+              {
+					value: 100 - percentage,
+					color:"#BBBDC0",
+					highlight: "#A7A9AB",
+					label: "Room to improve"
 				}
 			];
 
