@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Plan It Questions</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/grapher.css">
+
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+<body>
+	<header>
+		<h1><img src="/images/logo.png" alt="Plan It Green"></h1>
+	</header>
+
+
+	<div class="container">
+		<nav>
+    <ul>
+        
+            <li class="waste">Waste</li>
+        
+            <li class="energy">Energy</li>
+        
+            <li class="operations">Operations</li>
+        
+    </ul>
+</nav>
+
+<form action="/result/" method="POST">
+    <label for="company_name">Company Name</label>
+    <input type="text" name="company_name" id="company_name">
+
+    <label for="company_email">Company Email</label>
+    <input type="email" name="company_email" id="company_email">
+
+    
+        <section data-category="waste" class="waste">
+            <h3>Waste</h3>
+            
+                <h4>How do you deal with your office rubbish?</h4>
+                
+                <ul class="answers" data-question="Waste--1">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--1" value="1"> Unsorted trash
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--1" value="2"> Effort to reduce trash
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--1" value="3"> Some recycling
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--1" value="4"> Effort to reduce trash and increase recycling
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--1" value="5"> Segregrated recycling from trash
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Do your staff have the option to compost organic waste?</h4>
+                
+                <ul class="answers" data-question="Waste--2">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--2" value="1"> Organic waste in trash
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--2" value="2"> Reduce organic waste, but still no composting
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--2" value="3"> Compost is used occasionally
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--2" value="4"> Compost bins provided
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--2" value="5"> Compost bins provided and encouraged
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Is the office plumbing efficient?</h4>
+                
+                <ul class="answers" data-question="Waste--3">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--3" value="1"> Single flush toliets and tolelrated water leaks
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--3" value="2"> Single flush toilets
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--3" value="3"> Some single flush toilets and either dual flush toilets or low flow shower heads
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--3" value="4"> Either dual flush tolielts or low flow shower heads
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--3" value="5"> Dual flush toilets and low flow shower heads
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>How do you deal with electronic waste?</h4>
+                
+                <ul class="answers" data-question="Waste--4">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--4" value="1"> E-waste and batteries dumped with refuse
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--4" value="2"> Either E-waste or batteries dumped with refuse
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--4" value="3"> Efforts to reduce E-waste where practical
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--4" value="4"> E-waste taken to a recycler or batteries recycled
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Waste--4" value="5"> E-waste taken to a recycler and batteries recycled also
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <a class="button button-primary next-step" href="#">Next Step</a>
+            
+        </section>
+    
+        <section data-category="energy" class="energy">
+            <h3>Energy</h3>
+            
+                <h4>How does your power provider generate thier energy?</h4>
+                
+                <ul class="answers" data-question="Energy--1">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--1" value="1"> Energy provider utilizes non-renewable energy
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--1" value="2"> Energy provider utilizes minimal renewable energy
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--1" value="3"> Energy provider utilizes some renewable energy
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--1" value="4"> Energy provider utilizes mostly renewable energy
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--1" value="5"> Energy provider utilizes all renewable energy
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Could you tell us about your office lightbulbs?</h4>
+                
+                <ul class="answers" data-question="Energy--2">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--2" value="1"> Mostly incandescent bulbs
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--2" value="2"> Mix of incandescent bulbs and compact fluorescent bulbs
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--2" value="3"> Mostly compact fluorescent bulbs
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--2" value="4"> Mix of compact fluorescent bulbs and LED or eco-bulbs
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--2" value="5"> All LED or eco-bulbs
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Are you considering energy consumption when buying IT gear?</h4>
+                
+                <ul class="answers" data-question="Energy--3">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--3" value="1"> No consideration given
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--3" value="2"> Minimal consideration given
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--3" value="3"> Good ratings are a bonus
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--3" value="4"> Good ratings are required
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--3" value="5"> Exellent energy ratings are required
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>What systems are in place to conserve power?</h4>
+                
+                <ul class="answers" data-question="Energy--4">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--4" value="1"> No policy. Equipment is left running
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--4" value="2"> Some policies in place regarding turning off heating and equipment
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--4" value="3"> Strict policies in place regarding turning off heating and equipment
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--4" value="4"> Either light sensors or automatic equpment shut-off systems in place
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--4" value="5"> Both light sensors and automatic equpment shut-off systems in place
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>How is hot water generated for your office?</h4>
+                
+                <ul class="answers" data-question="Energy--5">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--5" value="1"> Uninsulated hot water cylinder
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--5" value="2"> Insulated hot water cylinder
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--5" value="3"> Mix of gas and electric methods
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--5" value="4"> Efficient gas water heating
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--5" value="5"> On-demand hot water heating
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>How is your office space insulated?</h4>
+                
+                <ul class="answers" data-question="Energy--6">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--6" value="1"> No insulation or double glasing
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--6" value="2"> Poor insulation
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--6" value="3"> Acceptable insulation or some double glasing
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--6" value="4"> Great insulation or all double glasing
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--6" value="5"> AmazingGreat insulation and all double glasing
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>How's you office heated?</h4>
+                
+                <ul class="answers" data-question="Energy--7">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--7" value="1"> Fan heaters
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--7" value="2"> Inefficient gas, timber or electric options
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--7" value="3"> Efficient gas, pellet or electric options
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--7" value="4"> Unmanaged heat pumps
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--7" value="5"> Thermostat managed heating system
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Are you considering energy/water consumption when buying appliances?</h4>
+                
+                <ul class="answers" data-question="Energy--8">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--8" value="1"> No consideration given
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--8" value="2"> Minimal consideration given
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--8" value="3"> Good ratings are a bonus
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--8" value="4"> Good ratings are required
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--8" value="5"> Exellent energy/water ratings are required
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Where do you host your company data?</h4>
+                
+                <ul class="answers" data-question="Energy--9">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--9" value="1"> In-house with power saving not a priority nor considered
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--9" value="2"> In-house with power saving not a priority but considered
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--9" value="3"> In a data center with an unspecified environmental policy
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--9" value="4"> In-house with power saving a priority
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Energy--9" value="5"> In a data center with an clear environmental policy
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <a class="button button-primary next-step" href="#">Next Step</a>
+            
+        </section>
+    
+        <section data-category="operations" class="operations">
+            <h3>Operations</h3>
+            
+                <h4>On average, how fuel efficient are comapny vechicles?</h4>
+                
+                <ul class="answers" data-question="Operations--1">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--1" value="1"> We have an old vehicle fleet that are not overly efficient
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--1" value="2"> We use a mix of modern cars and an older fleet
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--1" value="3"> We use modern cars that have OK efficiency
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--1" value="4"> A fuel efficent fleet is a clear company goal
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--1" value="5"> Efficient vehicles is a top priority for us
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Are you using engergy saving tires?</h4>
+                
+                <ul class="answers" data-question="Operations--2">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--2" value="1"> None of the fleet use fuel efficient tires
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--2" value="2"> Very little of the fleet use fuel efficient tires
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--2" value="3"> Some of the fleet uses fuel efficient tires
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--2" value="4"> Most of the fleet uses fuel efficient tires
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--2" value="5"> Yes, across the board
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>What are the office printing habits?</h4>
+                
+                <ul class="answers" data-question="Operations--3">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--3" value="1"> Mostly single sided, no recycling policy
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--3" value="2"> Mostly duplex or a clear recycling policy
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--3" value="3"> Conservative printing is encoruraged and all paper waste is recycled
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--3" value="4"> There is a paperless initives in place
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--3" value="5"> We are a paperless office
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>What's the stance on fair-trade products for staff use?</h4>
+                
+                <ul class="answers" data-question="Operations--4">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--4" value="1"> We don't use fair trade products
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--4" value="2"> Fair trade products are sometimes used
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--4" value="3"> Fair trade products are used some of the time
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--4" value="4"> Fair trade products are used most of the time
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--4" value="5"> Fair trade products are used exclusively
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Are businesses in your supply line environmentally conscious?</h4>
+                
+                <ul class="answers" data-question="Operations--5">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--5" value="1"> None of the companies in our supply line are green focused companies
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--5" value="2"> Some our supply line are green focused companies
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--5" value="3"> A few companies in our supply line are green focused companies
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--5" value="4"> Some our supply line are green focused companies
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--5" value="5"> All of our supply line are green focused companies
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Are there travel initiatives in place for your staff to reduce environmental impact?</h4>
+                
+                <ul class="answers" data-question="Operations--6">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--6" value="1"> Staff are not interested in public transport options
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--6" value="2"> No initiatives are in place to subsidise pubic transport or similar options to your staff.
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--6" value="3"> Some initiatives are in place to subsidise pubic transport or similar options to your staff.
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--6" value="4"> Good Initiatives are in place to subsidise pubic transport or similar options to your staff.
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--6" value="5"> Initiatives are in place and encouraged to subsidies pubic transport or similar options to your staff.
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Is your business carbon neutral?</h4>
+                
+                <ul class="answers" data-question="Operations--7">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--7" value="1"> We don't know
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--7" value="2"> We're not trying to get carbon neutral
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--7" value="3"> We're trying to get cabon neutral
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--7" value="4"> Yes, we're fully cabon neutral
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--7" value="5"> Yes, in fact we offset more than our impact
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Is there a company policy on offsetting the impact of air travel or vehicle milage?</h4>
+                
+                <ul class="answers" data-question="Operations--8">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--8" value="1"> We don't know
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--8" value="2"> We don't offset such travel
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--8" value="3"> We partially offset such travel
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--8" value="4"> Yes, we offset all such travel 100%
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--8" value="5"> Yes, we offset with more than we need to
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Are your office cleaners environmentally conscious and using eco-friendly cleaning products?</h4>
+                
+                <ul class="answers" data-question="Operations--9">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--9" value="1"> No they are not committed to being green or use eco-friendly cleaning products
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--9" value="2"> No they are not committed to being green but use eco-friendly cleaning products
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--9" value="3"> Yes they are committed to being green or using eco-friendly cleaning products
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--9" value="4"> Yes they are committed to being greens and using eco-friendly cleaning products
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--9" value="5"> Yes and they are publically marketed as such
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+                <h4>Are invoices paid and delivered electronically?</h4>
+                
+                <ul class="answers" data-question="Operations--10">
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--10" value="1"> Never electonic when paying and sending invoices
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--10" value="2"> Sometimes electonic when paying and sending invoices
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--10" value="3"> Mostly electonic when paying or sending invoices
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--10" value="4"> Mostly electonic when paying and sending invoices
+                            </label>
+                        </li>
+                    
+                        <li>
+                            <label>
+                                <input type="radio" name="Operations--10" value="5"> Always electonic when paying and sending invoices
+                            </label>
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <input type="hidden" value="swdudplanitgreen@gmail.com" name="cc_emails[]">
+                <input type="hidden" value="georgepaulphillips@gmail.com" name="cc_emails[]">
+
+                <input type="submit" class="button button-primary" value="Complete Survey">
+            
+        </section>
+    
+</form>
+
+	</div>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script> window.QUESTIONS = {"Waste":[{"name":"How do you deal with your office rubbish?","question":"How do you deal with your office rubbish?","answers":["Unsorted trash","Effort to reduce trash","Some recycling","Effort to reduce trash and increase recycling","Segregrated recycling from trash"],"weight":36},{"name":"Do your staff have the option to compost organic waste?","question":"Do your staff have the option to compost organic waste?","answers":["Organic waste in trash","Reduce organic waste, but still no composting","Compost is used occasionally","Compost bins provided","Compost bins provided and encouraged"],"weight":24},{"name":"Is the office plumbing efficient?","question":"Is the office plumbing efficient?","answers":["Single flush toliets and tolelrated water leaks","Single flush toilets","Some single flush toilets and either dual flush toilets or low flow shower heads","Either dual flush tolielts or low flow shower heads","Dual flush toilets and low flow shower heads"],"weight":20},{"name":"How do you deal with electronic waste?","question":"How do you deal with electronic waste?","answers":["E-waste and batteries dumped with refuse","Either E-waste or batteries dumped with refuse","Efforts to reduce E-waste where practical","E-waste taken to a recycler or batteries recycled","E-waste taken to a recycler and batteries recycled also"],"weight":20}],"Energy":[{"name":"How does your power provider generate thier energy?","question":"How does your power provider generate thier energy?","answers":["Energy provider utilizes non-renewable energy","Energy provider utilizes minimal renewable energy","Energy provider utilizes some renewable energy","Energy provider utilizes mostly renewable energy","Energy provider utilizes all renewable energy"],"weight":35},{"name":"Could you tell us about your office lightbulbs?","question":"Could you tell us about your office lightbulbs?","answers":["Mostly incandescent bulbs","Mix of incandescent bulbs and compact fluorescent bulbs","Mostly compact fluorescent bulbs","Mix of compact fluorescent bulbs and LED or eco-bulbs","All LED or eco-bulbs"],"weight":11},{"name":"Are you considering energy consumption when buying IT gear?","question":"Are you considering energy consumption when buying IT gear?","answers":["No consideration given","Minimal consideration given","Good ratings are a bonus","Good ratings are required","Exellent energy ratings are required"],"weight":6},{"name":"What systems are in place to conserve power?","question":"What systems are in place to conserve power?","answers":["No policy. Equipment is left running","Some policies in place regarding turning off heating and equipment","Strict policies in place regarding turning off heating and equipment","Either light sensors or automatic equpment shut-off systems in place","Both light sensors and automatic equpment shut-off systems in place"],"weight":6},{"name":"How is hot water generated for your office?","question":"How is hot water generated for your office?","answers":["Uninsulated hot water cylinder","Insulated hot water cylinder","Mix of gas and electric methods","Efficient gas water heating","On-demand hot water heating"],"weight":12},{"name":"How is your office space insulated?","question":"How is your office space insulated?","answers":["No insulation or double glasing","Poor insulation","Acceptable insulation or some double glasing","Great insulation or all double glasing","AmazingGreat insulation and all double glasing"],"weight":6},{"name":"How's you office heated?","question":"How's you office heated?","answers":["Fan heaters","Inefficient gas, timber or electric options","Efficient gas, pellet or electric options","Unmanaged heat pumps","Thermostat managed heating system"],"weight":12},{"name":"Are you considering energy/water consumption when buying appliances?","question":"Are you considering energy/water consumption when buying appliances?","answers":["No consideration given","Minimal consideration given","Good ratings are a bonus","Good ratings are required","Exellent energy/water ratings are required"],"weight":6},{"name":"Where do you host your company data?","question":"Where do you host your company data?","answers":["In-house with power saving not a priority nor considered","In-house with power saving not a priority but considered","In a data center with an unspecified environmental policy","In-house with power saving a priority","In a data center with an clear environmental policy"],"weight":6}],"Operations":[{"name":"On average, how fuel efficient are comapny vechicles?","question":"On average, how fuel efficient are comapny vechicles?","answers":["We have an old vehicle fleet that are not overly efficient","We use a mix of modern cars and an older fleet","We use modern cars that have OK efficiency","A fuel efficent fleet is a clear company goal","Efficient vehicles is a top priority for us"],"weight":17},{"name":"Are you using engergy saving tires?","question":"Are you using engergy saving tires?","answers":["None of the fleet use fuel efficient tires","Very little of the fleet use fuel efficient tires","Some of the fleet uses fuel efficient tires","Most of the fleet uses fuel efficient tires","Yes, across the board"],"weight":4},{"name":"What are the office printing habits?","question":"What are the office printing habits?","answers":["Mostly single sided, no recycling policy","Mostly duplex or a clear recycling policy","Conservative printing is encoruraged and all paper waste is recycled","There is a paperless initives in place","We are a paperless office"],"weight":12},{"name":"What's the stance on fair-trade products for staff use?","question":"What's the stance on fair-trade products for staff use?","answers":["We don't use fair trade products","Fair trade products are sometimes used","Fair trade products are used some of the time","Fair trade products are used most of the time","Fair trade products are used exclusively"],"weight":5},{"name":"Are businesses in your supply line environmentally conscious?","question":"Are businesses in your supply line environmentally conscious?","answers":["None of the companies in our supply line are green focused companies","Some our supply line are green focused companies","A few companies in our supply line are green focused companies","Some our supply line are green focused companies","All of our supply line are green focused companies"],"weight":13},{"name":"Are there travel initiatives in place for your staff to reduce environmental impact?","question":"Are there travel initiatives in place for your staff to reduce environmental impact?","answers":["Staff are not interested in public transport options","No initiatives are in place to subsidise pubic transport or similar options to your staff.","Some initiatives are in place to subsidise pubic transport or similar options to your staff.","Good Initiatives are in place to subsidise pubic transport or similar options to your staff.","Initiatives are in place and encouraged to subsidies pubic transport or similar options to your staff."],"weight":8},{"name":"Is your business carbon neutral?","question":"Is your business carbon neutral?","answers":["We don't know","We're not trying to get carbon neutral","We're trying to get cabon neutral","Yes, we're fully cabon neutral","Yes, in fact we offset more than our impact"],"weight":18},{"name":"Is there a company policy on offsetting the impact of air travel or vehicle milage?","question":"Is there a company policy on offsetting the impact of air travel or vehicle milage?","answers":["We don't know","We don't offset such travel","We partially offset such travel","Yes, we offset all such travel 100%","Yes, we offset with more than we need to"],"weight":13},{"name":"Are your office cleaners environmentally conscious and using eco-friendly cleaning products?","question":"Are your office cleaners environmentally conscious and using eco-friendly cleaning products?","answers":["No they are not committed to being green or use eco-friendly cleaning products","No they are not committed to being green but use eco-friendly cleaning products","Yes they are committed to being green or using eco-friendly cleaning products","Yes they are committed to being greens and using eco-friendly cleaning products","Yes and they are publically marketed as such"],"weight":5},{"name":"Are invoices paid and delivered electronically?","question":"Are invoices paid and delivered electronically?","answers":["Never electonic when paying and sending invoices","Sometimes electonic when paying and sending invoices","Mostly electonic when paying or sending invoices","Mostly electonic when paying and sending invoices","Always electonic when paying and sending invoices"],"weight":5}]} </script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/Chart.js"></script>
+    <script src="/js/results.js"></script>
+</body>
+</html>
