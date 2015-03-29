@@ -2,6 +2,8 @@
 
 	"use strict";
 
+	var data = window.localStorage.getItem("data");
+
 	var percentages = {
 		"waste": 20,
 		"energy": 40,

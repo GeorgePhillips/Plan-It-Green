@@ -1,9 +1,7 @@
 (function () {
 	var lastSection = "waste";
 
-	function validSection () {
-		var values = serialiseData($("section.active"));
-
+	function validate (values) {
 		for (var name in values) {
 			if (!values[name]) {
 				return false;
@@ -35,15 +33,19 @@
 	function nextSection(e) {
 		var nextKey = $("section.active").next("section").data("category");
 
-		if (validSection()) {
+		var data = serialiseData($("section.active")),
+			globalData = serialiseData(document);
+
+		if (validate(data)) {
 			if (nextKey) {
 				switchToSection(nextKey);
 			} else {
-				console.log(serialiseData(document));
-				window.localStorage.setItem("data", JSON.stringify(serialiseData(document)));
-				// window.location = "/result/";
-				return false;
+				window.localStorage.setItem("data", JSON.stringify(globalData));
 			}
+		}
+
+		if (!validate(globalData)) {
+			return false;
 		}
 	}
 
