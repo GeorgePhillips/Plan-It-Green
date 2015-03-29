@@ -77,6 +77,20 @@ section.active {
 	display: block;
 	margin: 0 auto;
 	max-width: 400px;
+    position: relative;
+}
+
+.canvas-wrapper span {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  font-size: 2em;
+}
+
+span.overall-percent {
+  font-size: 4em;
 }
 
 table {

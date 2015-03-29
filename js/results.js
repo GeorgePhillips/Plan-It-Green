@@ -5,11 +5,12 @@
 	var data = JSON.parse(window.localStorage.getItem("data")),
 		questions = window.QUESTIONS;
 
-	function getAnswer (category, index, weight) {
+	function getPercentage (category, index, weight) {
         //console.log(data);
-        var key = category + "--" + index;
+        var key = category + "--" + (index + 1);
         var answer = data[key];
         var weightedAnswer = (answer - 1)/4 * weight; 
+        console.log("Percentage " + category + " " + index + " " + " " + weight + " " + answer + " " + weightedAnswer);
         return weightedAnswer;
 	}
 
@@ -22,8 +23,19 @@
 
 			var data = [
 				{
+<<<<<<< HEAD
 					value: percentage,
 					color: "#38B449",
+=======
+					value: Math.round(100 - percentage),
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: Math.round(percentage),
+					color: "#46BFBD",
+>>>>>>> 2b590ca9fdb74130294c5f4370c7c68e9b718cd8
 					highlight: "#5AD3D1",
 					label: "Green"
 				},
@@ -40,25 +52,25 @@
 		return null;
 	}
 
-
-	console.log(data);
-	console.log(questions);
     
     var output = "", total = 0;
     for (var category in questions) { 
         var percentage = 0;
         output += "<h3>" + category + "</h3><table>";
         for (var i = 0; i < questions[category].length; i++) {
-            var answer = getAnswer(category, i + 1, questions[category][i].weight);
+            var answer = getPercentage(category, i, questions[category][i].weight);
             output += "<tr><td>" + questions[category][i].name + "</td><td>" + answer + "%</td></tr>";
             percentage += answer;
+            console.log("Percentage " + percentage);
         }
-        buildGraph(category.toLowerCase() + "-chart", percentage / questions[category].length); // TODO get the actual percentage complete
-        total += percentage / questions[category].length;
+        buildGraph(category.toLowerCase() + "-chart", percentage); 
+        $("." + category.toLowerCase() + "-percent").text(Math.round(percentage) + "%"); 
+        total += percentage;
         output += "</table>";
     }
     console.log(total);
-    buildGraph("overall-chart", total / 3); // TODO get the actual percentage complete
+    buildGraph("overall-chart", total / 3); 
+    $(".overall-percent").text(Math.round(total / 3) + "%"); 
         
     $("#table-section").html(output);
 
